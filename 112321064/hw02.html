@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw2</title>
+</head>
+<body>
+    <img id="img">
+    <script>
+        const picture = [
+            "https://img.ltn.com.tw/Upload/ent/page/800/2024/12/28/4907008_3.jpg",
+            "https://today-obs.line-scdn.net/0h8XnM2hb6Z3dTNHQvAGMYIGtiawZgUn1-cVorRCEzbUR4GHJyaAE0FHIyPFsuVil1c1t4EHc1MBIsUCYnbA/w644",
+            "https://image-cdn.learnin.tw/bnextmedia/image/album/2023-11/img-1699439011-38615.jpg?w=600&output=webp"
+        ];
+
+        let n = 0;
+        setInterval(() => {document.getElementById("img").src = picture[n % picture.length]; ++n}
+        , 5000);
+    </script>
+</body>
+</html>

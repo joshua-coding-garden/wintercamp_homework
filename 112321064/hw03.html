@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>hw3</title>
+</head>
+<body>
+    <h1>Inc and Dec</h1>
+    <button id="a" onClick="decrease()">-</button>
+    <span id="value">0</span>
+    <button id="b" onClick="increase()">+</button>
+    <script>
+	let v = Number(document.getElementById("value").innerHTML);
+	function update() {
+	    document.getElementById("value").innerHTML = v;
+	}
+	function decrease() {
+	    if (v > 0) v--;
+	    else {
+		v = 0;
+		alert("The value cannot be negative!");
+	    }
+	    update();
+	}
+	function increase() {
+	    v++;
+	    update();
+	}
+    </script>
+</body>
+</html>
