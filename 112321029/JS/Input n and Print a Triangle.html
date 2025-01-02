@@ -1,0 +1,26 @@
+<html>
+<script>
+    function build() {
+        temp = Number(document.getElementById("num").value);
+        if(temp < 0){
+            alert("不能輸入負數");
+            return 0;
+        }
+        s = "<BR />";
+        for (i = 1; i <= temp; ++i) {
+            for (j = 1; j <= i; ++j)
+                s += '*';
+                s += '<BR />';
+        }
+        document.getElementById("result").innerHTML = s;
+        document.getElementById("num").focus();
+    }
+</script>
+
+<body>
+    <input type='number' id='num' placeholder="Enter a number">
+    <button onClick='build()'>star</button>
+    <span id='result'></span>
+</body>
+
+</html>
