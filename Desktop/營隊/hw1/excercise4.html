@@ -1,0 +1,25 @@
+<input id='name' type=text><button id='check'>Check</button>
+<script>
+    const btn = document.getElementById('check');
+    btn.addEventListener('click', validate);
+    function validate() {
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    if (name == '')
+    document.getElementById('msgName').innerHTML = '<font color="red">This field cannot be empty.</font>';
+    else
+    document.getElementById('msgName').innerHTML = '';
+    if (phone == '')
+    document.getElementById('msgPhone').innerHTML = '<font color="red">This field cannot be empty.</font>';
+    else
+    document.getElementById('msgPhone').innerHTML = '';
+    }
+    /*
+    Exercise: Input n and Print a Triangle
+• Design a webpage so that you can input an integer N and click the
+“Star” button, then the program will draw a triangle with height N.
+• To enforce a new line, you may use the <br /> tag or <pre></pre> tag.• After that, clear the content of the input box, and move the cursorinto the input box
+automatically.
+• focus()
+*/
+</script>
