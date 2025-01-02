@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IncAndDec</title>
+</head>
+<body>
+    <button onclick="dec()">-</button>
+    <span id="num">0</span>
+    <button onclick="inc()">+</button>
+
+    <script>
+        let n = document.getElementById("num").innerHTML; 
+        function inc(){
+            n++;
+            document.getElementById("num").innerHTML = n;  
+        }
+
+        function dec(){
+            if(n == 0){
+                alert("The number is zero.");
+            }
+            else{
+                n--;
+            document.getElementById("num").innerHTML = n;  
+            }      
+        }
+    </script>
+</body>
+</html>
