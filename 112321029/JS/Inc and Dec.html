@@ -1,0 +1,25 @@
+<html>
+<script>
+    function plus() {
+        temp = document.getElementById("result").innerHTML;
+        temp++;
+        document.getElementById("result").innerHTML = temp;
+    }
+    function minus() {
+        temp = document.getElementById("result").innerHTML;
+        if (--temp < 0) {
+            ++temp;
+            alert("不能減到小於0");
+        }
+        document.getElementById("result").innerHTML = temp;
+    }
+</script>
+
+<body>
+
+    <button id='minus' onClick='minus();'>-</button>
+    <span id='result'>1</span>
+    <button id='plus' onClick='plus();'>+</button>
+</body>
+
+</html>

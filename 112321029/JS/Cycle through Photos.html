@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>Cycle through Photos</title>
+</head>
+
+<body>
+
+    <script>
+        temp = 1;
+        
+
+        function change() {
+            if(++temp > 3){
+                temp = 1;
+            }
+            let p = "http://poet.ncnu.org/Photo/starwar" + temp + ".jpg";
+            document.getElementById('picture').src = p;
+        }
+        const myInterval = setInterval(change, 5000);
+    </script>
+    <img src="http://poet.ncnu.org/Photo/starwar1.jpg" id='picture'></span>
+</body>
+
+</html>
