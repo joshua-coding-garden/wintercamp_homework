@@ -1,0 +1,21 @@
+<html>
+
+<script>
+let x = 0
+
+function Inc(){ x++; document.getElementById("num").innerText = x;  }
+
+function Dec(){ 
+ --x;
+ if(x < 0){ alert("The value cannot be negative!"); x = 0;}
+ else{ document.getElementById("num").innerText = x; }
+}
+</script>
+
+<body>
+<button id='D' onClick='Dec();'>-</button>
+<span id='num'>0</span>
+<button id='I' onClick='Inc();'>+</button>
+</body>
+
+</html>
