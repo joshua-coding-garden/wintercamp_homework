@@ -1,0 +1,19 @@
+<input type = 'number' id = 'num'>
+<button onclick = 'draw()'>Star</button>
+<span id = "rel"></span>
+
+<script>
+    function draw(){
+        num = Number(document.getElementById("num").value)
+        k = "<br/>"
+        for(i = 1;i <= num;i++){
+            for(j = 1;j <= i;j++){
+                k += "*"
+            }
+            k += "<br/>"
+        }
+        document.getElementById("rel").innerHTML = k;
+        document.getElementById("num").value = "";
+        document.getElementById("num").focus();
+    }
+</script>

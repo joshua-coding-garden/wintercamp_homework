@@ -1,0 +1,15 @@
+<img id = 'photo' />
+<script>
+    const images = [
+        "http://poet.ncnu.org/Photo/starwar1.jpg",
+        "http://poet.ncnu.org/Photo/starwar2.jpg",
+        "http://poet.ncnu.org/Photo/starwar3.jpg"
+    ];
+
+    let i = 0;
+    function change(){
+        i = (i + 1) % images.length;
+        document.getElementById('photo').src = images[i];
+    }
+    setInterval(change,3000);
+</script>
