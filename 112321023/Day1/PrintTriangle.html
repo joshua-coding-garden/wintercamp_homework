@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="num">
+    <button onclick="show()">Star</button>
+    <br />
+    <span id="star"></span>
+
+    <script>
+        function show(){
+            let s = "";
+            n = document.getElementById("num").value;
+            for(let i = 0; i < n; ++i){
+                for(let j = 0; j <= i; ++j){
+                    s += "*";
+                }
+                s += "<br />";
+            }
+            document.getElementById("star").innerHTML = s;
+        }
+    </script>
+</body>
+</html>
