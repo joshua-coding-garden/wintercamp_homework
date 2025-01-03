@@ -1,0 +1,12 @@
+<body>
+    <img id = "a">
+    <script>
+        let n = 1;
+        const i = setInterval(change, 5000);
+
+        function change() {
+            document.getElementById('a').src = `http://poet.ncnu.org/Photo/starwar${n++}.jpg`;
+            if (n>3) n = 1;
+        }
+    </script>
+</body>

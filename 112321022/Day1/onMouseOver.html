@@ -1,0 +1,27 @@
+<body>
+    <span onMouseOver="c(this, 1)" onMouseOut="f(this)" >綠螘新醅酒，</span>
+    <span onMouseOver="c(this, 2)" onMouseOut="f(this)" >紅泥小火爐。</span>
+    <span onMouseOver="c(this, 3)" onMouseOut="f(this)" >晚來天欲雪，</span>
+    <span onMouseOver="c(this, 4)" onMouseOut="f(this)" >能飲一杯無？</span>
+    <script>
+        function c(obj, n) {
+            switch (n){
+                case 1:
+                    obj.style.backgroundColor = "yellow";
+                    break;
+                case 2:
+                    obj.style.backgroundColor = "green";
+                    break;
+                case 3:
+                    obj.style.backgroundColor = "blue";
+                    break;
+                case 4:
+                    obj.style.backgroundColor = "red";
+                    break;
+            }
+        }
+        function f(obj) {
+            obj.style.backgroundColor = "white";
+        }
+    </script>
+</body>

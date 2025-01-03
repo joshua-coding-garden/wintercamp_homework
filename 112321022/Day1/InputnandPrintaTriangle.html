@@ -1,0 +1,22 @@
+<body>
+    <form id = "form1">
+    <input type = "number" id = "x" min = "0"/>
+    <button type = "button" onclick = "f();">Star</button>
+    <br/>
+    <span id = "y"></span>
+    </form>
+
+    <script>
+        function f(){
+            let s = "";
+            for (let i = 1; i <= Number(document.getElementById("x").value); i++){
+                for(let j = 0; j<i; j++)
+                    s += "*";
+                s += "<br>";
+            }
+            document.getElementById("y").innerHTML = s;
+            document.getElementById('x').focus();
+            document.getElementById('form1').reset();
+        }
+    </script>
+</body>
