@@ -1,0 +1,20 @@
+<body>
+    <button id="minuse" onclick="m();">-</button>
+    <span id="n" >5</span>
+    <button id="plus" onclick="p();">+</button>
+</body>
+
+<script>
+    let n=5;
+    function m(){
+        if(n>=1)
+            n--;
+        document.getElementById('n').innerText = n;
+    }
+
+    function p(){
+        n++;
+        document.getElementById('n').innerText = n;
+    }
+
+</script>

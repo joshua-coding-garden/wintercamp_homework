@@ -1,0 +1,19 @@
+<body>
+    <input type='text' id='x'>
+    <button onclick="star();">Star</button><br>
+    <span id="show"></span>
+</body>
+
+<script>
+    function star(){
+        x = Number(document.getElementById("x").value);
+        z="";
+        for(let i=1;i<=x;i++){
+            z=z+"*".repeat(i)+"<br>";
+        }
+        document.getElementById("show").innerHTML = z ;
+
+        document.getElementById("x").value = "" ;
+        document.getElementById("x").focus();
+    }
+</script>

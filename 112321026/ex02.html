@@ -1,0 +1,14 @@
+<script>
+    let n=3;
+
+function show() {
+    if(n==3) {document.getElementById('photo').src="http://poet.ncnu.org/Photo/starwar1.jpg"; n--;}
+    else if(n==2) {document.getElementById('photo').src="http://poet.ncnu.org/Photo/starwar2.jpg"; n--;}
+    else if(n==1) {document.getElementById('photo').src="http://poet.ncnu.org/Photo/starwar3.jpg"; n=3;}
+} 
+setInterval(show, 3000);
+</script>
+
+<body>
+    <img id='photo' >
+</body>
