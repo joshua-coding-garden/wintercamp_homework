@@ -1,0 +1,26 @@
+<html>
+
+<script>
+function triangle(){
+ const n = Number(document.getElementById("N").value);
+ s = "";
+ for(let i = 1; i <= n; i++){
+  for(let j = 1; j <= 2*i-1; j++){
+   s += '*';
+  }
+  s += '<br/>';
+ }
+
+ document.getElementById("S").innerHTML = s;
+ document.getElementById("N").value = '';
+ document.getElementById("N").focus();
+}
+</script>
+
+<body>
+<input type='text' id='N'>
+<button onClick='triangle();'>Star</button>
+<div id="S"></div>
+</body>
+
+</html>
