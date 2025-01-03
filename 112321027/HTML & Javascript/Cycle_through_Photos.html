@@ -1,0 +1,24 @@
+<html>
+
+<head>
+<title>PhotoShow</title>
+</head>
+
+<body>
+<img id = "photo" src = "http://poet.ncnu.org/Photo/starwar1.jpg">
+
+<script>
+let n = 3;
+
+function changePhoto(){
+ const img = document.getElementById("photo");
+ if(n == 3){ img.src = 'http://poet.ncnu.org/Photo/starwar2.jpg'; --n; }
+ else if(n == 2){ img.src = 'http://poet.ncnu.org/Photo/starwar3.jpg'; --n; }
+ else if(n == 1){ img.src = 'http://poet.ncnu.org/Photo/starwar1.jpg'; n = 3; }
+}
+
+setInterval(changePhoto, 1000);
+</script>
+</body>
+
+</html>
