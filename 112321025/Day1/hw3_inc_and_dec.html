@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Homework 3</title>
+</head>
+<body>
+    <h1>Inc and Dec</h1>
+    <button id="a" onClick="dec()">-</button>
+    <span id="value">0</span>
+    <button id="b" onClick="inc()">+</button>
+    <script>
+	let v = Number(document.getElementById("value").innerHTML);
+	function update() {
+	    document.getElementById("value").innerHTML = v;
+	}
+	function dec() {
+	    if (v > 0) v--;
+	    else {
+		v = 0;
+		alert("The value cannot be negative!");
+	    }
+	    update();
+	}
+	function inc() {
+	    v++;
+	    update();
+	}
+    </script>
+</body>
+</html>
