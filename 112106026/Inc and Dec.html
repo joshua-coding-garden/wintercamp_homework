@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inc and Dec</title>
+</head>
+
+<body>
+    <script>
+        let current_number=0;
+
+    function minus(){
+        current_number--;
+        if(current_number<0){
+            alert("The value cannot not be negative!");
+        }
+        else{
+            document.getElementById("num").innerHTML = current_number;
+        }
+    }
+
+    function plus(){
+        current_number++;
+        document.getElementById("num").innerHTML = current_number;
+    }
+    </script>
+    <button id="minus" onClick='minus();'>-</button>
+    <span id="num">0</span>
+    <button id="plus" onClick='plus();'>+</button>
+
+    </body>
+</html>
