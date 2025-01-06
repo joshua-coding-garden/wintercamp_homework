@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input and Print a Triangle</title>
+</head>
+
+<body>
+<script>
+    function ex01(n) {
+        s = "";
+        for (i=1; i<=n; ++i) {
+         for (j=1; j<=i; ++j)
+                s += '*';
+            s += '\n';
+        }
+        return s;
+    }
+    function generate_star(){
+        n = Number(document.getElementById("star_num").value);
+        document.getElementById("display_star").innerHTML = ex01(n);
+        document.getElementById("star_num").value = "";
+        document.getElementById("star_num").focus();
+    }
+</script>
+    <input type='int' id='star_num'>
+    <button id="generate" onClick='generate_star();'>Star</button><br>
+    <span id="display_star" style="white-space: pre-wrap;"></span>
+
+</body>
+</html>
