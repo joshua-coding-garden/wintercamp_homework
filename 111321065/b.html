@@ -1,0 +1,23 @@
+<title>Cycle through Photos</title>
+
+<body>
+    <h1>Cycle through Photos</h1>
+    <img id="photo" src="http://poet.ncnu.org/Photo/starwar1.jpg" width="300">
+
+    <script>
+        const photos = [
+            "http://poet.ncnu.org/Photo/starwar1.jpg",
+            "http://poet.ncnu.org/Photo/starwar2.jpg",
+            "http://poet.ncnu.org/Photo/starwar3.jpg"
+        ];
+
+        let index = 0; 
+        function change() {
+            index = (index + 1) % photos.length;
+            document.getElementById('photo').src = photos[index]; 
+        }
+
+
+         const myInterval=setInterval(change, 5000);
+    </script>
+</body>
