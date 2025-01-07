@@ -1,0 +1,18 @@
+<OL>
+    {% for line in lines %}
+    <LI> {{ line }} </LI>
+    {% endfor %}
+</OL>
+
+<TABLE BORDER>
+    {% for line in lines %}
+    <TR><TD>{{ loop.index }}</TD><TD> {{ line }} </TD></TR>
+    {% endfor %}
+</TABLE>
+
+<TABLE BORDER>
+    {% for line in lines %}
+    <TR STYLE="{{ loop.cycle('background-color: yellow;','background-color: cyan;', '')}}">
+    <TD>{{ loop.index }}</TD><TD> {{ line }} </TD></TR>
+    {% endfor %}
+</TABLE>
