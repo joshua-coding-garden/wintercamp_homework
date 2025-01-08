@@ -19,6 +19,7 @@ def upload():
     f = open(file_path, "r")
     data = json.load(f)
     f.close()
+    
     count = {}
     for entry in data:
         fruit = entry['fruit']
@@ -27,6 +28,7 @@ def upload():
             count[fruit] += quantity
         else:
             count[fruit] = quantity
+            
     os.remove(file_path)
     html = '<ul>'
     for fruit, quantity in count.items():
