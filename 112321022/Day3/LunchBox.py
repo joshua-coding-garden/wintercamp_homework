@@ -73,7 +73,7 @@ def accept():
     n = request.values['name']
     i = request.values['item']
     now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    print(now+' '+n +' '+i[:1], file=apfile)
+    print(now + ' ' + n + ' ' + i[:1], file=apfile)
     apfile.close()
 
     html = '''
@@ -113,7 +113,7 @@ def tatol():
             <tr>
                 <td>{}</td><td>{}</td><td>{}</td>
             </tr>
-        '''.format(temp[0] + temp[1], temp[2], meal)
+        '''.format(temp[0] + ' ' + temp[1], temp[2], meal)
     tatolfile.close()
 
     html += '''
