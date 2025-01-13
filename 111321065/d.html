@@ -1,0 +1,31 @@
+<html>
+<body>
+<script>
+
+function star(){
+	
+	let s='';
+	let num = document.getElementById('num').value;
+
+	for(let i = 1;i<=num;i++){
+		for(let j=1;j<=i;j++){
+			s+='*';}
+		s+='\n';
+
+	}
+	
+	document.getElementById('output').innerHTML = `<pre>${s}</pre>`;
+        document.getElementById('num').value = '';
+        document.getElementById('num').focus();
+}
+
+
+</script>
+
+
+<input type='text'id='num'></input>
+<button onClick='star()'>Star</button>
+<div id="output"></div>
+
+</body>
+</html>
