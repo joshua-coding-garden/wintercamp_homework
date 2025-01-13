@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Homework 2</title>
+</head>
+<body>
+    <h1>Cycle through Photos</h1>
+    <img id="image" src="https://www.ghibli.jp/gallery/howl011.jpg" width="500">
+    <script>
+	let n = 2;
+	function change() {
+	    const url = `https://www.ghibli.jp/gallery/howl01${n}.jpg`;
+	    document.getElementById("image").setAttribute('src', url);
+	    n = (n % 9) + 1
+	}	
+	setInterval(change,5000);
+    </script>
+</body>
+</html>

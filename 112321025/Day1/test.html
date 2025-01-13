@@ -1,0 +1,9 @@
+ Count down number: <div id='n'>10</div>
+ <script>
+     let n = 10;
+     function decrease() {
+ 	document.getElementById('n').innerText = n;
+ 	if (n==0) clearInterval(myInterval);--n;
+     }
+     const myInterval = setInterval(decrease, 1000);
+ </script>

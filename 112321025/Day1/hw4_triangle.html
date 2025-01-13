@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Homework 4</title>
+</head>
+<body>
+    <h1>Input n and Print a Triangle</h1>
+    <input type="text" id="input">
+    <button onClick="print()">Star</button>
+    <pre id="show"></pre>
+    <script>
+	function print() {
+	    let n = document.getElementById("input");
+	    let v = Number(n.value);
+	    let t = "";
+	    for (let i = 1; i <= v; i++) {
+		t += "*".repeat(i) + '<br>';
+	    }
+	    document.getElementById("show").innerHTML = t;
+	    n.value = "";
+            n.focus();
+	}
+    </script>	
+</body>
+</html>
