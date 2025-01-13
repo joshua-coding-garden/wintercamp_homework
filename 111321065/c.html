@@ -1,0 +1,38 @@
+<html>
+<script>
+let n=0;
+
+function count(){
+	document.getElementById("count").innerText = n;
+
+}
+
+function inc() {
+	++n;
+	count();
+}
+
+
+function dec() {
+	
+	if(n<=0){
+		alert("The value cannot be negative!")
+	}else{
+		--n;
+		count();
+	}
+
+}
+
+
+</script>
+
+<body>
+
+ <button id='inc' onClick='inc();'>+</button>
+<span id ='count'>0</span>
+ <button id='dec' onClick='dec();'>-</button>
+
+</body>
+
+</html>
