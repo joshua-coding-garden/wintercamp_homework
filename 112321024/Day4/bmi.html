@@ -1,0 +1,15 @@
+<table border>
+    <tr><td>Height: <td>{{ height }}</td></tr>
+    <tr><td>Weight: <td>{{ weight }}</td></tr>
+    <tr><td>BMI: <td>{{ bmi }} </td></tr>
+</table>
+
+{% if bmi < 18.5 %}
+<br> 體重過輕 </br>
+{% elif 18.5 <= bmi< 24 %}
+<br> 健康體重 </br>
+{% elif 24 <= bmi < 27 %}
+<br> 體重過重 </br>
+{% else %}
+<br> 肥胖 </br>
+{% endif %}
