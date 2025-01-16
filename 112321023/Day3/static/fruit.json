@@ -1,0 +1,7 @@
+[ {"fruit": "Apple", "quantity": 10},
+{"fruit": "Banana", "quantity": 5},
+{"fruit": "Coconut", "quantity": 9},
+{"fruit": "Apple", "quantity": 3},
+{"fruit": "Coconut", "quantity": 7},
+{"fruit": "Apple", "quantity": 4}
+]
