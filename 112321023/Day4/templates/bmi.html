@@ -1,0 +1,22 @@
+<table border>
+    <tr>
+        <td>Height:
+        <td>{{ height }}</td>
+    </tr>
+    <tr>
+        <td>Weight:
+        <td>{{ weight }}</td>
+    </tr>
+    <tr>
+        <td>BMI:
+        <td>{{ bmi }} </td>
+    </tr>
+</table>
+
+{% if bmi >= 24 %}
+<p>You are too fat.</p>
+{% elif bmi >= 18.5 %}
+<p>You are normal.</p>
+{% else %}
+<p>You are too thin.</p>
+{% endif %}
