@@ -1,0 +1,22 @@
+<html>
+<body>
+    <input type=text id=word onKeyUp='updateCandidate()'>
+    <br/><textarea id=candidate rows=10 readonly></textarea>
+    <script>
+        const socket = new WebSocket("ws://ws.ncnu.net:10003");
+        socket.onmessage = (event) => {
+            let x = JSON.parse(event.data);
+	    let candidates = x.join('\n');
+            document.getElementById("candidate").value = candidates;
+        };
+        function updateCandidate(){
+            let w = document.getElementById("word").value;
+   	    if (w.length >= 0) {
+                socket.send(w);
+            } else {
+                document.getElementById("candidate").value = '';
+            }
+        }
+    </script>
+</body>
+</html>
